@@ -4,7 +4,6 @@ import uuid
 import numpy as np
 from PIL import Image
 import streamlit as st
-from faceTraining import faceTraining
 
 
 face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
