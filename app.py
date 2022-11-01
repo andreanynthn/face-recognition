@@ -128,8 +128,8 @@ def main():
                                                        minSize = (64, 48)
                                                        )
                 path = 'dataset'
-                executionPath = os.getcwd()
-                recognizer = faceTraining(os.path.join(executionPath, path))
+                # executionPath = os.getcwd()
+                recognizer = faceTraining(path)
                 detector = "haarcascade_frontalface_default.xml"
                 faceCascade = cv2.CascadeClassifier(detector)
                 names = loadDatabase('database.txt')
