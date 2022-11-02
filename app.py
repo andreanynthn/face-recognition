@@ -128,6 +128,7 @@ def main():
             path = 'dataset'
             # executionPath = os.getcwd()
             recognizer = faceTraining(path)
+            recognizer.read('trainer.yml')
             detector = "haarcascade_frontalface_default.xml"
             faces = cv2.CascadeClassifier(detector)
             names = loadDatabase('database.txt')
