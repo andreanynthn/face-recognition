@@ -25,7 +25,7 @@ def loadDatabase(filename):
 
     data = database.read().split('\n')
     # names = [name for name in [data[i].split("'")[1] for i in range(len(data)-1)]]
-    names = [name for name in [data[i].split("'")[3] for i in range(len(data)-1)]]
+    names = [name for name in [data[i].split("'")[1] for i in range(len(data)-1)]]
     names.insert(0, 'None')
 
     return names
