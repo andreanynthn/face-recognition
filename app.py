@@ -130,7 +130,7 @@ def main():
             recognizer = faceTraining(path)
             recognizer.read('trainer.yml')
             detector = "haarcascade_frontalface_default.xml"
-            faces = cv2.CascadeClassifier(detector)
+            faceCascade = cv2.CascadeClassifier(detector)
             names = loadDatabase('database.txt')
 
             for(x,y,w,h) in faces:
